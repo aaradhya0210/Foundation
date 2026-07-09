@@ -7,12 +7,12 @@ int main()
     cin >> n;
      switch ( n % 5)
      {
-        case 0:
-        cout << "it is divisible by 5 " <<endl;
+        case 1:
+        cout << "it is not  divisible by 5 " <<endl;
         break;
         
         default :
-        cout << " Not divisible by 5 " << endl;
+        cout << " it is divisible by 5 " << endl;
         return 0 ;
         
 
