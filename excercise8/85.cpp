@@ -1,15 +1,22 @@
-#include <iostream>
+#include <iostream> 
 using namespace std;
-int main ()
-{
-    int num , digit , reverse = 0;
-    cin >> num ;
-    while ( num != 0){
-        digit = num % 10;
-        reverse = reverse * 10 + digit ;
+
+int reverse(int num) {
+    int rev = 0;
+
+    while ( num > 0){
+        int digit = num % 10;
+        rev = rev * 10 + digit;
         num = num / 10;
     }
-    cout << "reverse is  " <<endl;
-    return 0 ;
-
+    return rev ;
+}
+int main ()
+{
+    int n ;
+    cout << "Enter a number " << endl;
+    cin>> n;
+    int rev = reverse (n);
+    cout<<"reverse "<<rev<<endl;
+    return 0;
 }
